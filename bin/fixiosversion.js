@@ -44,44 +44,7 @@ if(!fs.existsSync(filename)) {
 }
 var proj = pbxproj.project(filename);
 console.log("Hello");
-var targets = [];
 proj.parse(function(err) {
-  const nts = proj.pbxNativeTargetSection();
-  for (var key in nts) {
-    if(key.endsWith("_comment")) continue; 
-    targets.push(nts[key].name)
-    console.log("Found target ", key, nts[key].name)
-  }
-  targets = targets.map((val)=>{
-    while (val.startsWith('"')) val = val.substring(1);
-    while (val.endsWith('"')) val = val.substring(0, val.length -1)
-    return val; 
-  });
-  targets.sort(); 
-  const mainprojects = targets.filter((val) => {
-    if(val.endsWith("Tests")) {
-      return false; 
-    }
-    return true;
-  });
-  var podlines = [];
-  podlines.push("# Created by react-native-pod")
-  mainprojects.map((project)=>{
-    podlines.push("target '"+project+"' do")
-    podlines.push("\t# We uncomment because we like dynamic frameworks witn working with swift projects")
-    podlines.push("\tuse_frameworks!")
-    targets.map((target)=>{
-      if(target == project + "Tests") {
-        //This is my test project
-        podlines.push("\ttarget '" + target + "' do")
-        podlines.push("\t\tinherit! :search_paths")
-        podlines.push("\t\t# Pods for testing")
-        podlines.push("\tend")
-      }
-    })
-    podlines.push("end")
-  })
-  console.log("Proposed pod file", podlines.join("\n"))
   for(var key in properties) {
     proj.addBuildProperty(key, properties[key]);
   }
