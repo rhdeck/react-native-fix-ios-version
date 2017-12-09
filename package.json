@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "./bin/fixiosversion.js"
   },
-  "rnpm" {
+  "rnpm": {
     "commands":{
       "prelink":"node ./node_modules/react-native-fix-ios-version/bin/fixiosversion.js"
     }
