@@ -8,10 +8,10 @@
     "postinstall": "./bin/fixiosversion.js"
   },
   "rnpm": {
-    "commands":{
+    "commands": {
       "prelink":"node ./node_modules/react-native-fix-ios-version/bin/fixiosversion.js"
     }
-  }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rhdeck/react-native-fix-ios-version.git"
