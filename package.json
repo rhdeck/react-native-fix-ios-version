@@ -1,6 +1,6 @@
 {
   "name": "react-native-fix-ios-version",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Updates target IOS version",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,7 @@
   },
   "rnpm": {
     "commands": {
-      "prelink":
-        "node ./node_modules/react-native-fix-ios-version/bin/fixiosversion.js"
+      "prelink": "node ./node_modules/react-native-fix-ios-version/bin/fixiosversion.js"
     }
   },
   "repository": {
