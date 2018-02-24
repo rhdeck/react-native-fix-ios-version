@@ -7,7 +7,7 @@ var targetVersion = "11.2";
 const packagePath = path.join(process.cwd(), "package.json");
 if (fs.existsSync(packagePath)) {
   const package = require(packagePath);
-  if (typeof package.iosTarget != undefined) {
+  if (typeof package.iosTarget != "undefined") {
     targetVersion = package.iosTarget;
   }
 }
