@@ -9,7 +9,8 @@
   },
   "rnpm": {
     "commands": {
-      "prelink": "node ./node_modules/react-native-fix-ios-version/bin/fixiosversion.js"
+      "prelink":
+        "node ./node_modules/react-native-fix-ios-version/bin/fixiosversion.js"
     }
   },
   "repository": {
@@ -24,6 +25,6 @@
   "homepage": "https://github.com/rhdeck/react-native-fix-ios-version#readme",
   "dependencies": {
     "glob": "^7.1.2",
-    "xcode": "https://github.com/apache/cordova-node-xcode"
+    "xcode": "rhdeck/cordova-node-xcode"
   }
 }
