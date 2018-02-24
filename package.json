@@ -4,12 +4,12 @@
   "description": "Updates target IOS version",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "./bin/fixiosversion.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "rnpm": {
     "commands": {
-      "prelink": "node ./node_modules/react-native-fix-ios-version/bin/fixiosversion.js"
+      "prelink":
+        "node ./node_modules/react-native-fix-ios-version/bin/fixiosversion.js"
     }
   },
   "repository": {
