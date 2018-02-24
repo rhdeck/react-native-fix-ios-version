@@ -13,7 +13,7 @@ if (fs.existsSync(packagePath)) {
 }
 var iosPath = path.resolve(process.cwd(), "ios");
 if (!fs.existsSync(iosPath)) {
-  console.log("Could not find ios in ", thisPath, iosPath);
+  console.log("Could not find path ", iosPath);
   console.log(fs.readdirSync(thisPath));
   process.exit();
 }
