@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "rnpm": {
+    "plugin": "plugin.js",
     "commands": {
       "prelink": "node ./node_modules/react-native-fix-ios-version/bin/fixiosversion.js"
     }
@@ -24,5 +25,8 @@
   "dependencies": {
     "glob": "^7.1.2",
     "xcode": "rhdeck/cordova-node-xcode"
+  },
+  "bin": {
+    "fix-ios-version": "./bin/fixiosversion.js"
   }
 }
