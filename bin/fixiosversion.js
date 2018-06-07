@@ -3,7 +3,7 @@ var pbxproj = require("xcode");
 var fs = require("fs");
 var path = require("path");
 var glob = require("glob");
-var targetVersion = "11.2";
+var targetVersion = "11.3";
 const packagePath = path.join(process.cwd(), "package.json");
 if (fs.existsSync(packagePath)) {
   const package = require(packagePath);
