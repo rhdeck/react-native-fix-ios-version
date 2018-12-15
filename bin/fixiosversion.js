@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-var pbxproj = require("xcode");
+var pbxproj = require("@raydeck/xcode");
 var fs = require("fs");
 var path = require("path");
 var glob = require("glob");
-var targetVersion = "11.3";
+var targetVersion = "11.4";
 const packagePath = path.join(process.cwd(), "package.json");
 if (fs.existsSync(packagePath)) {
   const package = require(packagePath);

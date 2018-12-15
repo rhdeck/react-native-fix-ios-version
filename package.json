@@ -24,7 +24,7 @@
   "homepage": "https://github.com/rhdeck/react-native-fix-ios-version#readme",
   "dependencies": {
     "glob": "^7.1.2",
-    "xcode": "rhdeck/cordova-node-xcode"
+    "@raydeck/xcode": "^2.2.0"
   },
   "bin": {
     "fix-ios-version": "./bin/fixiosversion.js"
