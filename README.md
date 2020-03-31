@@ -11,12 +11,6 @@ yarn add react-native-fix-ios-version
 # Usage
 
 ```
-react-native link
-```
-
-This will automatically update your project to the package default (presently 11.3) or the setting in your package.json
-
-```
 react-native set-ios-version <version>
 ```
 
@@ -38,3 +32,5 @@ react-native link
     iosTarget: 12.0
 }
 ```
+
+**NOTE The support for react-native link was removed in this version**

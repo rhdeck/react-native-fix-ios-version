@@ -6,12 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "rnpm": {
-    "plugin": "plugin.js",
-    "commands": {
-      "prelink": "node ./node_modules/react-native-fix-ios-version/bin/fixiosversion.js"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rhdeck/react-native-fix-ios-version.git"
